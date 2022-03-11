@@ -31,7 +31,7 @@ const WeatherReport = () => {
     let dateString;
 
     dailyWeather.forEach((element, index) => {
-      if (index == 0 || index >= 5) {
+      if (index === 0 || index >= 5) {
         return;
       }
       tempMax = element.temp.max;
@@ -46,6 +46,7 @@ const WeatherReport = () => {
 
       dailyArray.push({ sky, tempMax, tempMin, dateString });
     });
+
     return dailyArray;
   }
 
@@ -55,20 +56,20 @@ const WeatherReport = () => {
         <thead>
           <tr className="table-danger">
             <th scope="row">Comuna</th>
-            <td colspan="3">{value.communeName}</td>
+            <td colSpan="3">{value.communeName}</td>
           </tr>
           <tr>
             <th scope="row">Latitud</th>
-            <td colspan="3">{value.weatherResponse.lat}</td>
+            <td colSpan="3">{value.weatherResponse.lat}</td>
           </tr>
           <tr>
             <th scope="row">Longitud</th>
-            <td colspan="3">{value.weatherResponse.lon}</td>
+            <td colSpan="3">{value.weatherResponse.lon}</td>
           </tr>
           <tr>
             <th scope="row">CLIMA ACTUAL</th>
             <td>{currentReport.sky}</td>
-            <td colspan="3">{currentReport.temp}°C</td>
+            <td colSpan="3">{currentReport.temp}°C</td>
           </tr>
           <tr className="table-info">
             <th scope="col">DIA</th>

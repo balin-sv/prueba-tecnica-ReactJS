@@ -5,8 +5,8 @@ import { AppContext } from "../context/app-context";
 
 const SelectForm = () => {
   const value = useContext(AppContext);
-
   const apiService = new ApiService();
+
   const [regions, setRegions] = useState([]);
   const [region, setRegion] = useState("");
 
@@ -91,7 +91,7 @@ const SelectForm = () => {
     <div className="container">
       <form onSubmit={onSubmitHandler}>
         <div className="form-group">
-          <label for="exampleSelect1" className="form-label mt-4">
+          <label htmlFor="exampleSelect1" className="form-label mt-4">
             REGION
           </label>
           <select
@@ -107,7 +107,7 @@ const SelectForm = () => {
           </select>
         </div>
         <div className="form-group">
-          <label for="exampleSelect1" className="form-label mt-4">
+          <label htmlFor="exampleSelect1" className="form-label mt-4">
             PROVINCIA
           </label>
           <select
@@ -122,7 +122,7 @@ const SelectForm = () => {
           </select>
         </div>
         <div className="form-group">
-          <label for="exampleSelect1" className="form-label mt-4">
+          <label htmlFor="exampleSelect1" className="form-label mt-4">
             COMMUNA
           </label>
           <select

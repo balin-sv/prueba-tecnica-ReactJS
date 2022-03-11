@@ -13,7 +13,6 @@ export default class ApiService {
   }
 
   async getWeather(a, b) {
-    console.log("weather");
     const urlWeather = `https://api.openweathermap.org/data/2.5/onecall?lat=${a}&lon=${b}&exclude=minutely,hourly,alerts&appid=${this._apiKey}&lang=es&units=metric`;
     const res = await fetch(urlWeather);
     if (!res.ok) {

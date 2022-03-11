@@ -1,4 +1,4 @@
-import { useState, useEffect, createContext } from "react";
+import { useState, createContext } from "react";
 import React from "react";
 
 export const AppContext = createContext();
@@ -6,8 +6,6 @@ export const AppContext = createContext();
 export const AppProvider = ({ children }) => {
   const [weatherResponse, setWeatherResponse] = useState("");
   const [communeName, setCommuneName] = useState("");
-
-  useEffect(() => {}, []);
 
   return (
     <AppContext.Provider
