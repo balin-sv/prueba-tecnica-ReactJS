@@ -1,4 +1,4 @@
-DEPLOY https://sleepy-mccarthy-3b13ea.netlify.app/
+DEPLOY https://prueba-tecnica-react.netlify.app/
 
 
 
