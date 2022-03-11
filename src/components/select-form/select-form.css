@@ -1,0 +1,16 @@
+.term {
+  display: inline-block;
+  margin-right: 30px;
+  color: rgb(121, 121, 160);
+}
+
+.img-wrap {
+  margin-right: 20px;
+  height: 300px;
+  width: 300px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
